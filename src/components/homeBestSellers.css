@@ -1,0 +1,39 @@
+.bestSellers-container {
+  width: 85%;
+  margin: auto;
+  margin-top:3rem;
+}
+
+.bestSellers-container h1{
+ margin-bottom:2rem;
+}
+
+.best-sellers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-card {
+  width: 300px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color:black;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Adjust the scale factor as needed */
+  transition: transform 0.3s ease-in-out;
+  cursor:pointer;
+}

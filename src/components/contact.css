@@ -1,0 +1,73 @@
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top:2rem;
+    margin-bottom: 2rem;
+    min-height: 100vh;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  select,
+  input,
+  button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .social-media-links {
+    margin-top: 20px;
+  }
+  
+  .social-media-links p {
+    font-weight: bold;
+  }
+  
+  .social-media-links a {
+    display: block;
+    margin-top: 5px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .company-info {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+  /* Responsive Styling */
+  
+  @media screen and (max-width: 600px) {
+    form {
+      width: 100%;
+    }
+  }

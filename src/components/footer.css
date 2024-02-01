@@ -1,0 +1,57 @@
+.footer-container {
+    background-color: rgb(189, 88, 105);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-media {
+    margin-bottom: 15px;
+  }
+  
+  .social-media a {
+    color: white;
+    margin-right: 15px;
+    font-size: 40px;
+    text-decoration: none;
+  }
+  
+  .newsletter-signup {
+    text-align: center;
+  }
+  
+  .newsletter-signup h4 {
+    margin-bottom: 10px;
+  }
+  
+  .newsletter-signup form {
+    display: flex;
+    flex-direction: column; /* Change to column for better stacking on mobile */
+    align-items: center; /* Center the items horizontally */
+  }
+  
+  .newsletter-signup input,
+  .newsletter-signup button {
+    padding: 8px;
+    margin-bottom: 10px; /* Add margin for spacing between input and button */
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .newsletter-signup button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Media query for mobile view */
+  @media screen and (min-width: 768px) {
+    .footer-container {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+  

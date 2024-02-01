@@ -26,12 +26,11 @@ function Navbar() {
   return (
     <div className="App">
       <nav className="navbar">
-        <div className="logo"><b>Corkys</b>Footwear</div>
+        <div className="logo"><i>Corkys</i> Footwear</div>
         <div className={`nav-links ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
           <Link to={"/"}>Home</Link>
           <Link to={"/contact"}>Contact</Link>
-          <a href="#services">Products</a>
-          <a href="#contact">Sign In</a>
+          <Link to={"/Login"}>Sign In</Link>
         </div>
         <div className="menu-icon" onClick={toggleMobileMenu}>
           <span></span>

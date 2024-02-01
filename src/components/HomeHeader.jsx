@@ -12,11 +12,20 @@ const HomeHeader = ({ labels }) => {
     "https://shopaudaciousboutique.com/cdn/shop/files/IMG_7900_1_2048x.jpg?v=1692731720",
   ];
 
+  // Slick settings for the mobile carousel
+  const mobileCarouselSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <div className="home-header">
       {/* Mobile Carousel */}
       <div className="mobile-carousel">
-        <Slider>
+        <Slider {...mobileCarouselSettings}>
           {images.map((image, index) => (
             <Link to={`/category/${labels[index]}`} key={index} className="image-container">
               <img src={image} alt="" className="header-image" />
@@ -44,5 +53,6 @@ const HomeHeader = ({ labels }) => {
 };
 
 export default HomeHeader;
+
 
 

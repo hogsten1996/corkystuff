@@ -21,6 +21,12 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
   }
+
+  .logo i {
+    color:black;
+    font-size: 28px;
+    font-weight: bold;
+  }
   
   .nav-links {
     display: flex;

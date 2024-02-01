@@ -12,9 +12,15 @@ const Contact = () => {
           {/* Add more options as needed */}
         </select>
 
-        {/* Add other form fields here based on your requirements */}
+        <label htmlFor="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" className="contact-input" />
+
+        {/* Add more form fields as needed, e.g., Last Name, Email, etc. */}
         
-        <button type="submit">Submit</button>
+        <label htmlFor="message">Your Message:</label>
+        <textarea id="message" name="message" className="contact-textarea"></textarea>
+
+        <button className='contact-button' type="submit">Submit</button>
       </form>
 
       <div className="social-media-links">

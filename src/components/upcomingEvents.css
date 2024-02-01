@@ -16,6 +16,8 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Ensure children are stacked vertically */
 }
 
 .event-card img {
@@ -31,9 +33,11 @@
   text-align: left;
 }
 
-.button-container{
-    display:flex;
-    justify-content: center;
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  margin:auto;
 }
 
 .learn-more-button {
@@ -43,8 +47,8 @@
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
-  margin:5px;
-  width:200px;
+  margin: 5px;
+  width: 200px;
 }
 
 .learn-more-button:hover {
@@ -53,10 +57,11 @@
 
 /* Media query for mobile view */
 @media screen and (max-width: 768px) {
-    .event-card {
-      width: 100%;
-    }
-    .event-card img {
-        height:200px;
-    }
+  .event-card {
+    width: 100%;
   }
+  .event-card img {
+    height: 200px;
+  }
+}
+
